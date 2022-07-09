@@ -1,0 +1,17 @@
+.blogger {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding:5px;
+    border: 2px dashed rgb(238, 226, 237);
+}
+
+#blogger_name {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.social_buttons {
+    margin: 5px;
+}

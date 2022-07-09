@@ -1,0 +1,31 @@
+<div class="blogger">
+    <div style="display: flex;">
+      <img src="assets/image.png" alt="logo" width="55px" height="55px">
+      <h3 id="blogger_name">Aravind</h3>
+</div>
+<div>
+    <button type="button" class="btn btn-outline-success" id="follow_button" (click)="follow()"><span>{{button_name}}</span>&nbsp;&nbsp;<span>{{follow_count}}</span></button>
+</div>
+  </div>
+<div class="container">
+<div class="card" *ngFor="let i of blog" style="border-radius: 15px; border: 2px solid rgb(221, 213, 207); ">
+    <div class="card-body">
+        <h3>{{i.blogHead}}</h3>
+        <p>{{i.blogDate}}</p>
+        <br>
+        <p>{{i.blogContent.slice(0,527)}}</p>
+        <p>{{i.blogContent.slice(528)}}</p>
+    </div>
+</div>
+<div style="display: flex; justify-content: flex-end">
+    <button type="button" class="btn btn-info social_buttons">Like</button>
+    <button type="button" class="btn btn-info social_buttons">Share</button>
+    <button type="button" class="btn btn-info social_buttons">Comment</button>
+</div>
+<app-comments></app-comments>
+<!-- <div class="card">
+    <div class="card-body">
+        Blog Content
+    </div>
+</div> -->
+</div>

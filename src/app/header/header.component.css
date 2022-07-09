@@ -1,0 +1,16 @@
+.blogger {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+#blogger_name {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.signin_link {
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: rgb(50, 35, 35);
+}
